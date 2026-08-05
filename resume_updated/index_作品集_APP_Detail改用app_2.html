@@ -1,0 +1,916 @@
+<!DOCTYPE html>
+
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>個人履歷｜黃曉暄</title>
+<!-- 連接 CSS -->
+<link href="style.css" rel="stylesheet"/>
+<!-- Font Awesome 圖示 -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" rel="stylesheet"/>
+<style>
+/* Education school logos */
+#education .card-icon {
+    width: 58px;
+    height: 58px;
+    min-width: 58px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    border-radius: 50%;
+    background: #ffffff;
+}
+
+#education .school-logo {
+    width: 48px;
+    height: 48px;
+    object-fit: contain;
+    display: block;
+}
+
+@media (max-width: 768px) {
+    #education .card-icon {
+        width: 52px;
+        height: 52px;
+        min-width: 52px;
+    }
+
+    #education .school-logo {
+        width: 43px;
+        height: 43px;
+    }
+}
+</style><style>
+/* APP project detail */
+#app-project .project-image-button img {
+    width: 100%;
+    max-height: 620px;
+    object-fit: contain;
+}
+
+@media (max-width: 768px) {
+    #app-project .project-image-button img {
+        max-height: 520px;
+    }
+}
+</style></head>
+<body>
+<!-- 櫻花飄落區域 -->
+<div id="sakura-container"></div>
+<!-- 上方導覽列 -->
+<header>
+<nav class="navbar">
+<a href="#about">BIO</a>
+<a href="#education">EDUCATION</a>
+<a href="#experience">EXPERIENCE</a>
+<a href="#skills">SKILLS</a>
+<a href="#certificates">CERTIFICATES</a>
+<a href="#portfolio">PORTFOLIO</a>
+<a href="#activities">ACTIVITIES</a>
+<a href="#contact">CONTACT</a>
+</nav>
+</header>
+<!-- 個人介紹 -->
+<section class="hero" id="about">
+<div class="hero-decoration decoration-one"></div>
+<div class="hero-decoration decoration-two"></div>
+<div class="hero-content">
+<!-- 左側照片 -->
+<div class="profile-area">
+<img alt="黃曉暄個人照片" class="profile-photo" src="images/profile.jpg"/>
+</div>
+<!-- 右側介紹 -->
+<div class="intro-area">
+<p class="hello-text">Hello, I am</p>
+<h1>黃曉暄</h1>
+<h2>Ava</h2>
+<p>
+                    目前從事農業水資源、灌溉資料整理與系統建置相關工作，
+                    主要負責資料彙整、Python 程式處理、
+                    MS SQL 資料庫建置，以及查詢工具功能規劃。
+                </p>
+<p>
+                    熟悉 Excel、Python、資料庫與基本網頁製作，
+                    並具有公務統計資料整理、系統測試、
+                    正式報告撰寫及資料視覺化經驗。
+                </p>
+<!-- 技能標籤 -->
+<div class="tags">
+<span>Python</span>
+<span>MS SQL</span>
+<span>Excel</span>
+<span>HTML</span>
+<span>Data Analysis</span>
+</div>
+<!-- 社群與聯絡 -->
+<div class="social-links">
+<a aria-label="Email" href="mailto:small1232108@gmail.com">
+<i class="fa-solid fa-envelope"></i>
+</a>
+<a aria-label="GitHub" href="https://github.com/sammy0323" rel="noopener noreferrer" target="_blank">
+<i class="fa-brands fa-github"></i>
+</a>
+<a aria-label="LinkedIn" href="#" rel="noopener noreferrer" target="_blank">
+<i class="fa-brands fa-linkedin"></i>
+</a>
+</div>
+</div>
+</div>
+</section>
+<main>
+<!-- 學歷 -->
+<section class="section" id="education">
+<div class="section-heading">
+<p class="section-small-title">
+                    Academic Background
+                </p>
+<h2 class="section-title">
+                    EDUCATION
+                </h2>
+</div>
+<div class="timeline">
+<article class="card">
+<span class="card-icon"><img alt="國立中央大學校徽" class="school-logo" loading="lazy" src="images/中央.png"/></span>
+<div class="card-content">
+<h3>
+                            國立中央大學｜統計研究所
+                        </h3>
+<p class="date">
+                            2023 年 9 月－2025 年 6 月
+                        </p>
+<p>
+                            研究方向涵蓋統計建模、時間序列與機器學習，
+                            完成變點檢測與 Copula 模型相關論文研究，
+                            並具備 R、Python、資料分析及模型比較經驗。
+                        </p>
+</div>
+</article>
+<article class="card">
+<span class="card-icon"><img alt="國立臺灣師範大學校徽" class="school-logo" loading="lazy" src="images/師大.png"/></span>
+<div class="card-content">
+<h3>
+                            國立臺灣師範大學｜數學系
+                        </h3>
+<p class="date">
+                            2017 年 9 月－2022 年 6 月
+                        </p>
+<p>
+                            修習數學專業課程及教育學程，取得 106 年師資生資格，
+                            並於萬芳高中完成一學期數學教育實習，
+                            累積教材設計、課堂管理與教學實務經驗。
+                        </p>
+</div>
+</article>
+</div>
+</section>
+<!-- 工作經歷 -->
+<section class="section section-pink" id="experience">
+<div class="section-inner">
+<div class="section-heading">
+<p class="section-small-title">
+                        Work History
+                    </p>
+<h2 class="section-title">
+                        EXPERIENCE
+                    </h2>
+</div>
+<article class="card">
+<span class="card-icon">
+<i class="fa-solid fa-briefcase"></i>
+</span>
+<div class="card-content">
+<h3>
+                            台農院｜研究員
+                        </h3>
+<p class="date">
+                            2025 年 9 月－目前
+                        </p>
+<ul>
+<li>
+                                定期彙整灌溉用水與插秧進度資料。
+                            </li>
+<li>
+                                使用 Python 進行資料整理、轉換及匯入。
+                            </li>
+<li>
+                                建置與維護 MS SQL 資料庫。
+                            </li>
+<li>
+                                規劃灌溉資料查詢工具及 LINE Bot 功能。
+                            </li>
+<li>
+                                製作正式報告、統計表格與資料圖表。
+                            </li>
+</ul>
+</div>
+</article>
+</div>
+</section>
+<!-- 技能 -->
+<section class="section" id="skills">
+<div class="section-heading">
+<p class="section-small-title">
+                    Professional Ability
+                </p>
+<h2 class="section-title">
+                    SKILLS
+                </h2>
+</div>
+<div class="skill-grid">
+<article class="skill-card">
+<div class="skill-icon">
+<i class="fa-solid fa-code"></i>
+</div>
+<h3>程式開發與資料處理</h3>
+<p>
+                        Python、Pandas、Xcode、GitHub，
+                        程式開發、版本管理、資料清理與自動化處理。
+                    </p>
+</article>
+<article class="skill-card">
+<div class="skill-icon">
+<i class="fa-solid fa-database"></i>
+</div>
+<h3>資料庫</h3>
+<p>
+                        MS SQL、資料表設計、
+                        資料匯入與條件式查詢。
+                    </p>
+</article>
+<article class="skill-card">
+<div class="skill-icon">
+<i class="fa-solid fa-globe"></i>
+</div>
+<h3>網頁與系統開發</h3>
+<p>
+                        HTML、CSS、JavaScript、Flask，
+                        以及 LINE Messaging API 互動系統開發。
+                    </p>
+</article>
+<article class="skill-card">
+<div class="skill-icon">
+<i class="fa-solid fa-file-powerpoint"></i>
+</div>
+<h3>辦公軟體與報告製作</h3>
+<p>
+                        Excel、Word、PowerPoint，
+                        統計表格、資料視覺化與正式報告製作。
+                    </p>
+</article>
+<article class="skill-card skill-card-featured">
+<div class="skill-icon">
+<i class="fa-solid fa-wand-magic-sparkles"></i>
+</div>
+<h3>AI 與影音創作</h3>
+<p>
+                        CapCut、Suno 與生成式 AI，
+                        影片剪輯、AI 音樂及數位內容製作。
+                    </p>
+</article>
+</div>
+</section>
+<!-- 證照與證書 -->
+<section class="section section-pink" id="certificates">
+<div class="section-inner">
+<div class="section-heading">
+<p class="section-small-title">
+                        Certifications
+                    </p>
+<h2 class="section-title">
+                        CERTIFICATES
+                    </h2>
+</div>
+<div class="certificate-grid">
+<!-- TQC 程式語言 -->
+<article class="certificate-card">
+<div class="certificate-icon">
+<i class="fa-solid fa-code"></i>
+</div>
+<div class="certificate-content">
+<h3>TQC+ Python 3 程式語言認證</h3>
+<p class="certificate-issuer">
+                                財團法人中華民國電腦技能基金會
+                            </p>
+<p class="date">
+                                2026 年 1 月
+                            </p>
+<p>
+                                具備 Python 程式語言、程式邏輯設計及問題解決能力。
+                            </p>
+<a href="images/tqc-programming.jpg" rel="noopener noreferrer" target="_blank">
+                                查看證書
+                            </a>
+</div>
+<div class="certificate-details">
+<p>
+<span>取得證照日期</span>
+<strong>民國 115 年 1 月 24 日</strong>
+</p>
+<p>
+<span>證照字號</span>
+<strong>212260200000560</strong>
+</p>
+</div>
+</article>
+<!-- TQC 機器學習 -->
+<article class="certificate-card">
+<div class="certificate-icon">
+<i class="fa-solid fa-robot"></i>
+</div>
+<div class="certificate-content">
+<h3>TQC+ 人工智慧：機器學習 Python 3</h3>
+<p class="certificate-issuer">
+                                財團法人中華民國電腦技能基金會
+                            </p>
+<p class="date">
+                                2026 年 6 月
+                            </p>
+<p>
+                                具備機器學習基礎、資料前處理、模型建置及分析應用能力。
+                            </p>
+<a href="images/tqc-machine-learning.jpg" rel="noopener noreferrer" target="_blank">
+                                查看證書
+                            </a>
+</div>
+<div class="certificate-details">
+<p>
+<span>取得證照日期</span>
+<strong>民國 115 年 6 月 10 日</strong>
+</p>
+<p>
+<span>證照字號</span>
+<strong>212260700004030</strong>
+</p>
+</div>
+</article>
+<!-- 中央大學大數據暑期講師 -->
+<article class="certificate-card">
+<div class="certificate-icon">
+<i class="fa-solid fa-person-chalkboard"></i>
+</div>
+<div class="certificate-content">
+<h3>中央大學大數據暑期培訓營講師</h3>
+<p class="certificate-issuer">
+                                國立中央大學
+                            </p>
+<p class="date">
+                                2024 年 7 月
+                            </p>
+<p>
+                                擔任大數據暑期培訓營 R 模組講師，負責課程講授與實作指導。
+                            </p>
+<a href="images/ncu-bigdata-instructor.jpg" rel="noopener noreferrer" target="_blank">
+                                查看證明
+                            </a>
+</div>
+</article>
+<!-- TOEIC -->
+<article class="certificate-card">
+<div class="certificate-icon">
+<i class="fa-solid fa-language"></i>
+</div>
+<div class="certificate-content">
+<h3>TOEIC 多益英語測驗</h3>
+<p class="certificate-issuer">
+                                ETS TOEIC
+                            </p>
+<p class="date">
+                                總分 680 分
+                            </p>
+<p>
+                                具備英文聽力與閱讀理解能力，可閱讀一般英文文件及專業資料。
+                            </p>
+<a href="images/toeic.jpg" rel="noopener noreferrer" target="_blank">
+                                查看證書
+                            </a>
+</div>
+</article>
+</div>
+</div>
+</section>
+<!-- 作品集 -->
+<section class="section" id="portfolio">
+<div class="section-inner">
+<div class="section-heading">
+<p class="section-small-title">
+                        Selected Projects
+                    </p>
+<h2 class="section-title">
+                        PORTFOLIO
+                    </h2>
+</div>
+<!-- 公司專案 -->
+<div class="portfolio-subheading">
+<p class="section-small-title">
+                        Company Projects
+                    </p>
+<h3>
+                        公司專案
+                    </h3>
+</div>
+<div class="portfolio-grid">
+<article class="project-card">
+<div class="project-number">01</div>
+<h3>
+                            精進灌溉管理大數據資料庫
+                        </h3>
+<p>
+                            建置灌溉資料管理系統，整合插秧進度、公務統計、灌溉公告及各項業務資料，利用 Python 與 MS SQL 建立自動化資料整理及查詢平台。
+                        </p>
+<a href="#database-project">
+                            查看作品
+                        </a>
+</article>
+<article class="project-card">
+<div class="project-number">02</div>
+<h3>
+                            曾文水庫入流量預測（LSTM）
+                        </h3>
+<p>
+                            建立 LSTM 深度學習模型，利用雨量、入流量及歷史水文資料進行曾文水庫入流量預測，比較不同輸入組合及模型效能。
+                        </p>
+<a href="#lstm-project">
+                            查看作品
+                        </a>
+</article>
+<article class="project-card">
+<div class="project-number">03</div>
+<h3>
+                            雨量站資料檢核與品質管理
+                        </h3>
+<p>
+                            協助建立雨量站資料檢核流程，包含合理性檢核、相關性檢核、自動化異常判定及檢核報表產製，提升雨量資料品質管理效率。
+                        </p>
+<a href="#rainfall-qc-project">
+                            查看作品
+                        </a>
+</article>
+<article class="project-card">
+<div class="project-number">04</div>
+<h3>
+                            LINE Bot 智慧灌溉查詢系統
+                        </h3>
+<p>
+                            開發 LINE Bot 查詢系統，整合 GPS 定位、工作站、水位、流量及灌溉公告，提供即時查詢服務。
+                        </p>
+<a href="#linebot-project">
+                            查看作品
+                        </a>
+</article>
+<article class="project-card">
+<div class="project-number">05</div>
+<h3>
+                            水利署 Open API 水情查詢
+                        </h3>
+<p>
+                            串接經濟部水利署公開 API，整合即時水情資訊，
+                            建置水庫水位、蓄水量及相關水情資料查詢介面。
+                        </p>
+<a href="https://sammy0323.github.io/reservoir-water-status/" rel="noopener noreferrer" target="_blank">
+                            查看作品
+                        </a>
+</article>
+</div>
+<!-- 學校與學術專案 -->
+<div class="portfolio-subheading">
+<p class="section-small-title">
+                        Academic Projects
+                    </p>
+<h3>
+                        學校與學術專案
+                    </h3>
+</div>
+<div class="portfolio-grid portfolio-grid-academic">
+<article class="project-card">
+<div class="project-number">
+                            05
+                        </div>
+<h3>
+                            研究所論文｜變點檢測與 Copula 模型
+                        </h3>
+<p>
+                            探討變點檢測（Change-Point Detection），使用最大概似估計（MLE）
+                            結合 Newton-Raphson 演算法估計變點與模型參數，並以 Copula
+                            馬可夫鏈描述時間序列相依結構。透過模擬資料及 COVID-19
+                            確診數據驗證模型，辨識資料中的結構變化。
+                        </p>
+<p class="project-tools">
+                            使用工具：R、LaTeX、MLE、Newton-Raphson、Copula
+                        </p>
+</article>
+<article class="project-card">
+<div class="project-number">
+                            06
+                        </div>
+<h3>
+                            統計實務｜機器學習於阿茲海默症分類之應用
+                        </h3>
+<p>
+                            比較支持向量機、決策樹、隨機森林、K 最近鄰居及邏輯迴歸等 分類模型，並以訓練資料與測試資料評估模型表現， 比較準確率、召回率及 F1-score 等指標。
+                        </p>
+<p class="project-tools">
+                            使用工具：R、SVM、Decision Tree、Random Forest、KNN、Logistic Regression
+                        </p>
+<a href="#alzheimers-project">
+                            查看作品
+                        </a>
+</article>
+<article class="project-card">
+<div class="project-number">
+                            07
+                        </div>
+<h3>
+                            時間序列｜2008 年金融危機產業指數分析
+                        </h3>
+<p>
+                            探討 2008 年金融危機對不同產業指數的影響，
+                            使用 ARMA 與 GARCH 模型進行市場波動建模與預測，
+                            並比較不同模型在波動捕捉與預測效果上的差異。
+                        </p>
+<p class="project-tools">
+                            使用工具：R、Time Series、ARMA、GARCH、Model Comparison
+                        </p>
+<a href="#timeseries-project">
+                            查看作品
+                        </a>
+</article>
+</div>
+<!-- 個人專案 -->
+<div class="portfolio-subheading">
+<p class="section-small-title">
+                        Personal Projects
+                    </p>
+<h3>
+                        個人專案
+                    </h3>
+</div>
+<div class="portfolio-grid portfolio-grid-personal">
+<article class="project-card">
+<div class="project-number">
+                            08
+                        </div>
+<button aria-label="放大查看手機 APP 開發畫面" class="project-image-button" data-project-image="images/app.png" type="button">
+<img alt="手機 APP 開發畫面" loading="lazy" src="images/app.png"/>
+</button>
+<h3>
+                            手機 APP 開發
+                        </h3>
+<p>以 Xcode 與 Swift 開發療癒陪伴型 iOS APP，整合工作紀錄、離職倒數、心情日記、生活提醒與陪伴者互動等功能。</p>
+<p class="project-tools">
+                            使用工具：Xcode、Swift
+                        </p>
+<a href="#app-project">查看作品</a></article>
+<article class="project-card">
+<div class="project-number">
+                            09
+                        </div>
+<h3>
+                            AI 音樂製作
+                        </h3>
+<p>
+                            運用 Suno 進行 AI 音樂生成，並搭配 CapCut 完成音訊剪輯、
+                            影片編排與視覺內容製作。
+                        </p>
+<p class="project-tools">
+                            使用工具：Suno、CapCut
+                        </p>
+<a href="https://youtube.com/@syuan0323?si=vYlq6D75xOnhgq0R" rel="noopener noreferrer" target="_blank">
+                            查看作品
+                        </a>
+</article>
+</div>
+</div>
+</section>
+<!-- 專案成果展示 -->
+<section class="section section-pink" id="project-showcase">
+<div class="section-inner">
+<div class="section-heading">
+<p class="section-small-title">
+                        Project Showcase
+                    </p>
+<h2 class="section-title">
+                        PROJECT DETAILS
+                    </h2>
+</div>
+<!-- 雨量站資料檢核與品質管理 -->
+<article class="project-detail-card" id="database-project">
+<div class="project-detail-text">
+<p class="project-detail-label">
+                            PYTHON × MS SQL
+                        </p>
+<h3>
+                            精進灌溉管理大數據資料庫
+                        </h3>
+<p>
+                            透過 Python 程式進行資料清理、格式轉換及批次匯入，
+                            並建置於 MS SQL 資料庫，作為後續查詢系統與
+                            LINE Bot 公告功能之資料來源。
+                        </p>
+<ul>
+<li>整合 CSV、Excel 等不同格式資料</li>
+<li>建立輪灌、間歇灌溉、通引水及停水公告資料表</li>
+<li>規劃資料欄位、分類方式與查詢架構</li>
+<li>展示內容均採示意資料並完成去識別化處理</li>
+</ul>
+</div>
+<button class="project-image-button" data-project-image="images/database-workflow.png" type="button">
+<img alt="Python 資料整理與 MS SQL 資料庫建置流程" src="images/database-workflow.png"/>
+</button>
+</article>
+<!-- 曾文水庫入流量預測 LSTM -->
+<article class="project-detail-card project-detail-card-reverse" id="lstm-project">
+<div class="project-detail-text">
+<p class="project-detail-label">
+                            PYTHON × LSTM × TIME SERIES
+                        </p>
+<h3>
+                            曾文水庫入流量預測（LSTM）
+                        </h3>
+<p>
+                            建立 LSTM 深度學習模型，整合雨量、歷史入流量與水文特徵，
+                            進行曾文水庫入流量預測，並比較不同輸入組合、時間落後設定
+                            與模型架構的預測表現。
+                        </p>
+<ul>
+<li>整理雨量、入流量及歷史水文時間序列資料</li>
+<li>依流量級距進行訓練、驗證與測試資料分配</li>
+<li>比較不同輸入變數、時間窗與 LSTM 模型架構</li>
+<li>以 RMSE、MAE、R² 等指標評估模型效能</li>
+</ul>
+</div>
+<button class="project-image-button" data-project-image="images/LSTM.png" type="button"><img alt="LSTM入流量預測" src="images/LSTM.png"/></button></article>
+<!-- 精進灌溉管理大數據資料庫 -->
+<article class="project-detail-card" id="rainfall-qc-project">
+<div class="project-detail-text">
+<p class="project-detail-label">
+                            PYTHON × EXCEL × DATA QUALITY
+                        </p>
+<h3>
+                            雨量站資料檢核與品質管理
+                        </h3>
+<p>協助建立管理處雨量站資料檢核流程，以鄰近氣象署觀測站作為參考，建立合理性與相關性檢核機制，並利用 Python 自動完成資料判定與 Excel 檢核報表產製。</p>
+<ul><li><strong>合理性檢驗：</strong>以歷史日雨量建立 Gamma 分布，利用卡方適合度檢定建立合理性門檻。</li><li><strong>相關性檢驗：</strong>管理處雨量站與氣象署配對站建立線性迴歸，利用 LC／UC 判定異常。</li><li><strong>Python 自動化：</strong>資料整理、異常判定及 Excel 報表產製。</li><li><strong>成果展示：</strong>合理性分析、相關性分析及檢核圖表。</li></ul></div>
+<div class="project-gallery"><button class="project-image-button" data-project-image="images/品管.png" type="button"><img alt="雨量站資料檢核報表" src="images/品管.png"/></button><button class="project-image-button" data-project-image="images/品管-2.png" type="button"><img alt="雨量站相關性分析" src="images/品管-2.png"/></button></div></article>
+<!-- LINE Bot 專案 -->
+<article class="project-detail-card project-detail-card-reverse" id="linebot-project">
+<div class="project-detail-text">
+<p class="project-detail-label">
+                            LINE MESSAGING API
+                        </p>
+<h3>
+                            LINE Bot 智慧灌溉查詢系統
+                        </h3>
+<p>
+                            負責整體功能規劃、LINE Bot 查詢介面設計與程式開發，
+                            整合系統圖、地址查詢、GPS 定位通水資訊及鄰近工作站等功能。
+                        </p>
+<ul>
+<li>設計四格主選單與操作流程</li>
+<li>依 GPS 位置或輸入地址比對最近水利小組</li>
+<li>整合供灌支線、工作站及上游測站資訊</li>
+<li>提供水位、流量與各類通水公告查詢</li>
+</ul>
+<p class="project-privacy-note">
+                            ※ 圖中地址、電話、工作站及測站資料皆為示意內容。
+                        </p>
+</div>
+<div class="project-gallery">
+<button class="project-image-button" data-project-image="images/linebot-system.png" type="button">
+<img alt="LINE Bot 系統圖與鄰近工作站功能" src="images/linebot-system.png"/>
+</button>
+<button class="project-image-button" data-project-image="images/linebot-location-query.png" type="button">
+<img alt="LINE Bot GPS 定位與地址查詢功能" src="images/linebot-location-query.png"/>
+</button>
+</div>
+</article>
+<!-- 阿茲海默症機器學習專案 -->
+<article class="project-detail-card" id="alzheimers-project">
+<div class="project-detail-text">
+<p class="project-detail-label">
+                            MACHINE LEARNING
+                        </p>
+<h3>
+                            機器學習於阿茲海默症分類之應用
+                        </h3>
+<p>
+                            應用支持向量機（SVM）、決策樹、隨機森林、
+                            K 最近鄰演算法（KNN）及邏輯迴歸等機器學習模型，
+                            評估其在非失智、轉變型及失智三類別上的辨識能力，
+                            並比較各模型的分類表現。
+                        </p>
+<ul>
+<li>使用 OASIS Dataset 進行特徵分析與資料整理</li>
+<li>以中位數補值處理 SES 與 MMSE 的缺失資料</li>
+<li>使用 SMOTE 與 KNN 改善類別不平衡問題</li>
+<li>比較 SVM、決策樹、隨機森林、KNN 與邏輯迴歸</li>
+<li>以 Accuracy、Precision、Recall 與 F1-score 評估模型</li>
+</ul>
+<a class="project-pdf-link" href="images/機器學習.pdf" rel="noopener noreferrer" target="_blank">
+                            查看完整海報（PDF）
+                        </a>
+</div>
+<button class="project-image-button" data-project-image="images/機器學習.png" type="button">
+<img alt="機器學習於阿茲海默症分類之研究海報" src="images/機器學習.png"/>
+</button>
+</article>
+<!-- 2008 年金融危機時間序列專案 -->
+<article class="project-detail-card project-detail-card-reverse" id="timeseries-project">
+<div class="project-detail-text">
+<p class="project-detail-label">
+                            FINANCIAL TIME SERIES
+                        </p>
+<h3>
+                            2008 年金融危機產業指數分析
+                        </h3>
+<p>
+                            蒐集加權指數、水泥、食品、紡織纖維及電器電纜等產業資料，
+                            分析 2008 年金融危機前後的價格與報酬率變化，並建立時間序列模型進行預測。
+                        </p>
+<ul>
+<li>使用 ACF、PACF、ADF test 與 Ljung-Box test 檢驗序列特性</li>
+<li>建立並比較 ARMA 與 ARMA-GARCH 模型</li>
+<li>比較不同誤差分配與模型 AIC 表現</li>
+<li>以 MSE 與 MSPE 評估模型擬合及預測效果</li>
+</ul>
+<a class="project-pdf-link" href="images/時間序列.pdf" rel="noopener noreferrer" target="_blank">
+                            查看完整報告（PDF）
+                        </a>
+</div>
+<button class="project-image-button" data-project-image="images/時間序列.png" type="button">
+<img alt="2008 年金融危機產業指數時間序列分析報告預覽" src="images/時間序列.png"/>
+</button>
+</article>
+<article class="project-detail-card project-detail-card-reverse" id="app-project">
+<div class="project-detail-text">
+<p class="project-detail-label">
+            XCODE × SWIFT × ICLOUD
+        </p>
+<h3>
+            手機 APP 開發
+        </h3>
+<p>
+            以 Xcode 與 Swift 開發療癒陪伴型 iOS APP，協助使用者記錄工作歷程、
+            管理離職規劃，並結合心情紀錄、生活提醒與陪伴者互動功能，
+            提升日常管理與情緒支持體驗。
+        </p>
+<ul>
+<li>記錄目前工作與歷任工作</li>
+<li>設定離職倒數與離職日期</li>
+<li>每日心情日記與心情統計</li>
+<li>今日目標與生活提醒</li>
+<li>七位不同風格的療癒陪伴者</li>
+<li>陪伴者暖心回應與歌曲陪伴</li>
+<li>自訂每週陪伴安排</li>
+<li>iCloud 資料同步</li>
+<li>Premium 永久解鎖更多陪伴與自訂功能</li>
+</ul>
+</div>
+<button aria-label="放大查看手機 APP 開發畫面" class="project-image-button" data-project-image="images/app_2.png" type="button">
+<img alt="手機 APP 功能展示畫面" loading="lazy" src="images/app_2.png"/>
+</button>
+</article></div>
+</section>
+<!-- 實習與社團經歷 -->
+<section class="section section-pink" id="activities">
+<div class="section-inner">
+<div class="section-heading">
+<p class="section-small-title">
+                        Internship &amp; Activities
+                    </p>
+<h2 class="section-title">
+                        實習與社團經歷
+                    </h2>
+</div>
+<div class="activity-grid">
+<article class="activity-card">
+<button class="activity-image-button project-image-button" data-project-image="images/activity-teaching.png" type="button">
+<img alt="萬芳高中數學實習教學照片" src="images/activity-teaching.png"/>
+</button>
+<div class="activity-icon">
+<i class="fa-solid fa-chalkboard-user"></i>
+</div>
+<div class="activity-content">
+<p class="activity-type">教育實習</p>
+<h3>萬芳高中｜數學實習老師</h3>
+<p>
+                                大學期間修習教育學程，並於萬芳高中完成一學期數學教育實習。
+                                實習期間參與課程規劃、教材設計、課堂教學、班級管理及學習評量，
+                                並透過學生回饋與教學反思持續調整授課策略。
+                            </p>
+<div class="activity-tags">
+<span>課堂管理</span>
+<span>教材設計</span>
+<span>學生互動</span>
+<span>教學評量</span>
+<span>教學反思</span>
+</div>
+</div>
+</article>
+<article class="activity-card">
+<button class="activity-image-button project-image-button" data-project-image="images/activity-department-event.png" type="button">
+<img alt="數學系活動與美宣經歷照片" src="images/activity-department-event.png"/>
+</button>
+<div class="activity-icon">
+<i class="fa-solid fa-palette"></i>
+</div>
+<div class="activity-content">
+<p class="activity-type">系學會幹部</p>
+<h3>數學系系學會｜美股長</h3>
+<p>
+                                負責系上活動的視覺設計、海報製作與宣傳素材規劃，
+                                並與其他幹部協調活動需求及製作時程。
+                                透過實際執行活動設計工作，培養美感設計、跨組溝通、
+                                時間管理及臨場應變能力。
+                            </p>
+<div class="activity-tags">
+<span>視覺設計</span>
+<span>活動宣傳</span>
+<span>組織協調</span>
+<span>時間管理</span>
+<span>團隊合作</span>
+</div>
+</div>
+</article>
+<article class="activity-card">
+<button class="activity-image-button project-image-button" data-project-image="images/activity-summer-camp.png" type="button">
+<img alt="數學暑期營隊輔團體照片" src="images/activity-summer-camp.png"/>
+</button>
+<div class="activity-icon">
+<i class="fa-solid fa-people-group"></i>
+</div>
+<div class="activity-content">
+<p class="activity-type">營隊經歷</p>
+<h3>數學暑期營｜隊輔</h3>
+<p>
+                                協助營隊課程與活動執行、照顧學員並帶領數學遊戲及分組活動。
+                                在與學生互動及處理現場狀況的過程中，
+                                提升溝通表達、活動帶領、團隊合作與臨場應變能力，
+                                並累積引導學生參與及學習的經驗。
+                            </p>
+<div class="activity-tags">
+<span>活動帶領</span>
+<span>學生互動</span>
+<span>溝通表達</span>
+<span>團隊合作</span>
+<span>臨場應變</span>
+</div>
+</div>
+</article>
+</div>
+</div>
+</section>
+<!-- 專案圖片放大視窗 -->
+<div aria-hidden="true" class="project-image-modal" id="project-image-modal">
+<button aria-label="關閉圖片" class="project-modal-close" type="button">
+<i class="fa-solid fa-xmark"></i>
+</button>
+<img alt="專案成果放大圖片" id="project-modal-image" src=""/>
+</div>
+<!-- 聯絡方式 -->
+<section class="section contact-section" id="contact">
+<div class="section-heading">
+<p class="section-small-title">
+                    Get In Touch
+                </p>
+<h2 class="section-title">
+                    CONTACT
+                </h2>
+</div>
+<div class="contact-card">
+<div class="contact-item">
+<i class="fa-solid fa-envelope"></i>
+<div>
+<h3>
+                            Email
+                        </h3>
+<a href="mailto:small1232108@gmail.com">
+                            small1232108@gmail.com
+                        </a>
+</div>
+</div>
+<div class="contact-item">
+<i class="fa-brands fa-github"></i>
+<div>
+<h3>
+                            GitHub
+                        </h3>
+<a href="https://github.com/sammy0323" rel="noopener noreferrer" target="_blank">
+                            github.com/sammy0323
+                        </a>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- 頁尾 -->
+<footer>
+<p>
+            © 2026 黃曉暄．All Rights Reserved.
+        </p>
+</footer>
+<!-- 連接 JavaScript -->
+<script src="script.js"></script>
+</body>
+</html>
