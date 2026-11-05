@@ -401,18 +401,18 @@
                         PORTFOLIO
                     </h2>
 </div>
-<!-- 公司專案 -->
+<!-- 公司負責專案 -->
 <div class="portfolio-subheading">
 <p class="section-small-title">
                         Company Projects
                     </p>
 <h3>
-                        公司專案
+                        公司負責專案
                     </h3>
 </div>
 <div class="portfolio-grid">
 <article class="project-card">
-<div class="project-number">01</div>
+<div class="project-number">02</div>
 <h3>
                             精進灌溉管理大數據資料庫
                         </h3>
@@ -424,7 +424,7 @@
                         </a>
 </article>
 <article class="project-card">
-<div class="project-number">02</div>
+<div class="project-number">03</div>
 <h3>
                             曾文水庫入流量預測（LSTM）
                         </h3>
@@ -435,13 +435,13 @@
                             查看作品
                         </a>
 </article>
-<article class="project-card">
-<div class="project-number">03</div>
+<article class="project-card" style="order: -1;">
+<div class="project-number">01</div>
 <h3>
                             雨量站資料檢核與品質管理
                         </h3>
 <p>
-                            協助建立雨量站資料檢核流程，包含合理性檢核、相關性檢核、自動化異常判定及檢核報表產製，提升雨量資料品質管理效率。
+                            開發「雨量品管小工具.exe」，串接 COSDIS API 自動擷取鄰近三個測站資料，供工作站雨量品質檢核，並整合合理性、相關性檢驗及檢核報表產製。
                         </p>
 <a href="#rainfall-qc-project">
                             查看作品
@@ -676,13 +676,13 @@
 <article class="project-detail-card" id="rainfall-qc-project">
     <div class="project-detail-text">
         <p class="project-detail-label">
-            PYTHON × EXCEL × DATA QUALITY
+            PYTHON × COSDIS API × DATA QUALITY
         </p>
 <h3>
                             雨量站資料檢核與品質管理
                         </h3>
-<p>協助建立管理處雨量站資料檢核流程，以鄰近氣象署觀測站作為參考，建立合理性與相關性檢核機制，並利用 Python 自動完成資料判定與 Excel 檢核報表產製。</p>
-<ul><li><strong>合理性檢驗：</strong>以歷史日雨量建立 Gamma 分布，利用卡方適合度檢定建立合理性門檻。</li><li><strong>相關性檢驗：</strong>管理處雨量站與氣象署配對站建立線性迴歸，利用 LC／UC 判定異常。</li><li><strong>Python 自動化：</strong>資料整理、異常判定及 Excel 報表產製。</li><li><strong>成果展示：</strong>合理性分析、相關性分析及檢核圖表。</li></ul></div>
+<p>協助建立管理處雨量站資料檢核流程，串接 COSDIS API 自動擷取鄰近三個測站資料，作為工作站品管參考，建立合理性與相關性檢核機制，並以 Python 開發自動化工具，打包為「雨量品管小工具.exe」，完成資料判定及 Excel 檢核報表產製。</p>
+<ul><li><strong>合理性檢驗：</strong>以歷史日雨量建立 Gamma 分布，利用卡方適合度檢定建立合理性門檻。</li><li><strong>相關性檢驗：</strong>管理處雨量站與氣象署配對站建立線性迴歸，利用 LC／UC 判定異常。</li><li><strong>COSDIS API：</strong>自動擷取鄰近三個測站資料，支援工作站雨量品管。</li><li><strong>自動化工具：</strong>以 Python 開發並打包為「雨量品管小工具.exe」，完成資料整理、異常判定及 Excel 檢核報表產製。</li><li><strong>成果展示：</strong>合理性分析、相關性分析及檢核圖表。</li></ul></div>
 <div class="project-gallery"><button class="project-image-button" data-project-image="images/品管.png" type="button"><img alt="雨量站資料檢核報表" src="images/品管.png"/></button><button class="project-image-button" data-project-image="images/品管-2.png" type="button"><img alt="雨量站相關性分析" src="images/品管-2.png"/></button></div></article>
 <!-- LINE Bot 專案 -->
 <article class="project-detail-card project-detail-card-reverse" id="linebot-project">
